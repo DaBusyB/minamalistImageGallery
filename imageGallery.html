@@ -1,29 +1,112 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Page Gallery</title>
+    <title>Image Gallery</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" media="screen" href="imageGallery.css" />
-    <link href="https://fonts.googleapis.com/css?family=Do+Hyeon" rel="stylesheet">
 </head>
 <body>
-<p>By Brandi Apetsi</p>
-       <!-- Massimo Margagnoni -->
-<img src="http://c1.staticflickr.com/9/8450/8026519634_f33f3724ea_b.jpg">
-<img src="http://c2.staticflickr.com/8/7218/7209301894_c99d3a33c2_h.jpg">
-<img src="http://c2.staticflickr.com/8/7231/6947093326_df216540ff_b.jpg">
+    <!-- dark blue 2c3e50 
+    light gray ecf0f1 -->
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container">
+            <div class="navbar-header">
+                <!-- lines 13-18 the hamburger menu targeting the id in line 22 for burger menu -->
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-nav-demo"    aria-expanded="false">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#"><span class="glyphicon glyphicon-picture"></span> IMGS</a>  
+            </div>
+            <!-- id is burger menu selections being targeted -->
+            <div class="collapse navbar-collapse" id="bs-nav-demo">  
+                <ul class="nav navbar-nav">
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="#">Sign up</a></li>
+                    <li><a href="#">Log in</a></li>
+                </ul>
+            </div><!--collapse navbar-collapse -->
+        </div> <!--container -->
+    </nav>
 
-<!-- Giuseppe Milo -->
-<img src="http://c1.staticflickr.com/9/8788/17367410309_78abb9e5b6_b.jpg">
-<img src="http://c2.staticflickr.com/6/5814/20700286354_762c19bd3b_b.jpg">
-<img src="http://c2.staticflickr.com/6/5647/21137202535_404bf25729_b.jpg">
+    <div class="container">
+        <div class="jumbotron">
+            <h1><i class="fas fa-camera-retro"></i> The Image Gallery</h1>
+            <p>A collection of beautiful images</p>
+        </div>
 
-<!-- GörlitzPhotography -->
-<img src="http://c2.staticflickr.com/6/5588/14991687545_5c8e1a2e86_b.jpg">
-<img src="http://c2.staticflickr.com/4/3888/14878097108_5997041006_b.jpg">
-<img src="http://c2.staticflickr.com/8/7579/15482110477_0b0e9e5421_b.jpg">
+        <!-- thumbnail takes images of diff sizes & scales them to same size & adds border -->
+        <div class="row">
+            <div class="col-lg-4 col-sm-6">
+                <div class="thumbnail" >
+                    <img src="http://c1.staticflickr.com/9/8450/8026519634_f33f3724ea_b.jpg">
+                </div>
+            </div>
 
-<!-- All Photos Licensed Under Creative Commons 2.0 -->
-<!-- https://creativecommons.org/licenses/by/2.0/legalcode  -->
+            <div class="col-lg-4 col-sm-6">
+                <div class="thumbnail">
+                    <img src="http://c2.staticflickr.com/8/7218/7209301894_c99d3a33c2_h.jpg">
+                </div> 
+            </div>
+
+            <div class="col-lg-4 col-sm-6">
+                <div class="thumbnail">
+                    <img src="http://c2.staticflickr.com/8/7231/6947093326_df216540ff_b.jpg">
+                </div> 
+            </div>
+
+            <div class="col-lg-4 col-sm-6">
+                <div class="thumbnail">
+                    <img src="http://c1.staticflickr.com/9/8788/17367410309_78abb9e5b6_b.jpg">
+                    
+                </div> 
+            </div>
+
+            <div class="col-lg-4 col-sm-6">
+                <div class="thumbnail">
+                    <img src="http://c2.staticflickr.com/6/5814/20700286354_762c19bd3b_b.jpg">
+                    
+                </div> 
+            </div>
+
+            <div class="col-lg-4 col-sm-6">
+                <div class="thumbnail">
+                    <img src="http://c2.staticflickr.com/6/5647/21137202535_404bf25729_b.jpg">
+                    
+                </div> 
+            </div>
+            
+            <div class="col-lg-4 col-sm-6">
+                <div class="thumbnail">
+                    <img src="http://c2.staticflickr.com/8/7579/15482110477_0b0e9e5421_b.jpg">
+                                        
+                </div> 
+            </div>
+
+            <div class="col-lg-4 col-sm-6">
+                <div class="thumbnail">
+                    <img src="http://c2.staticflickr.com/4/3888/14878097108_5997041006_b.jpg">
+                                        
+                </div> 
+            </div>
+
+            <div class="col-lg-4 col-sm-6">
+                <div class="thumbnail">
+                    <img src="http://c2.staticflickr.com/6/5588/14991687545_5c8e1a2e86_b.jpg">
+                                   
+                </div> 
+            </div>
+        </div> <!--row-->
+    </div> <!--container-->
+
+    <script src="https://code.jquery.com/jquery-2.2.4.js" integrity="sha256-iT6Q9iMJYuQiMWNd9lDyBUStIq/8PuOW33aOqmvFpqI=" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
 </body>
 </html>
 
